@@ -1,0 +1,816 @@
+body{
+	font-family: "Arial";
+    /*
+    background: -moz-linear-gradient(90deg, white 10%, lightblue 90%);
+    background: -webkit-linear-gradient(90deg, white 10%, lightblue 90%);
+    background: -webkit-gradient(linear, 0 100%, 0 0, color-stop(0.1, white), color-stop(0.9, lightblue));
+    background: -o-linear-gradient(90deg, white 10%, lightblue 90%);
+    background: linear-gradient(90deg, white 10%, lightbluee 90%);
+    */
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;	
+	margin: 0 5px;
+	
+}
+
+
+.boton{
+	text-align:center;
+	
+}
+
+.menu{
+
+	margin-top: 60px;
+	text-align:center;
+	font-size: 250%;
+	color: #0033CC;
+
+}
+.color {
+	
+	font-size:15px;
+	color: #000000;
+	background-color:#FFFFFF;
+	text-align: center;
+}
+
+.color:hover{
+	
+	font-weight: bold;
+	
+}
+.color2 {
+	
+	color:#FF0000;
+	
+}
+
+.formulario{
+	
+	margin-top: 100px;
+	text-align:center;
+	
+}
+
+input{
+
+	font-size: 20px; 
+	border: 1px solid grey;
+	padding: 5px;
+	border-radius: 5px;
+	margin-top: 5px;
+	display: inline-block;
+
+	
+}
+/*
+input[type="text"]
+{
+	width: 120px;
+	font-size: 20px; 
+}*/
+/*
+input[type="password"]
+{
+	width: 212px;
+	font-size: 20px; 
+}*/
+/*
+input[type="submit"]
+{
+	width: 100px;	
+}
+*/
+/* 
+input[type="button"]
+{
+	width: 20%;	
+}
+
+input[type="button"]{
+	margin-top: 20px;
+}*/
+.logo{
+    
+    margin-top: 15px;
+    cursor: pointer;
+    width: 80%;
+}
+
+.texto{
+	color: white; text-shadow: black 0.1em 0.1em 0.2em;
+	font-size: 20px; 
+}
+
+select{
+	
+	border: 1px solid grey;
+	padding: 5px;
+	border-radius: 5px;
+	margin-top: 5px;
+	display: inline-block;
+	
+}
+.detalle {
+	
+	font-size:16px;
+	color: white;
+	background-color: green;
+	
+}
+
+.detalle:hover{
+	
+	font-weight: bold;
+	color: white;
+	size: 20px;
+	
+}
+.grid {
+	margin:0px;padding:0px;
+	width:100%;
+	box-shadow: 10px 10px 5px #888888;
+	border:1px solid #000000;
+	
+	-moz-border-radius-bottomleft:6px;
+	-webkit-border-bottom-left-radius:6px;
+	border-bottom-left-radius:6px;
+	
+	-moz-border-radius-bottomright:6px;
+	-webkit-border-bottom-right-radius:6px;
+	border-bottom-right-radius:6px;
+	
+	-moz-border-radius-topright:6px;
+	-webkit-border-top-right-radius:6px;
+	border-top-right-radius:6px;
+	
+	-moz-border-radius-topleft:6px;
+	-webkit-border-top-left-radius:6px;
+	border-top-left-radius:6px;
+}.grid table{
+    border-collapse: collapse;
+        border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}.grid tr:last-child td:last-child {
+	-moz-border-radius-bottomright:6px;
+	-webkit-border-bottom-right-radius:6px;
+	border-bottom-right-radius:6px;
+}
+.grid table tr:first-child td:first-child {
+	-moz-border-radius-topleft:6px;
+	-webkit-border-top-left-radius:6px;
+	border-top-left-radius:6px;
+}
+.grid table tr:first-child td:last-child {
+	-moz-border-radius-topright:6px;
+	-webkit-border-top-right-radius:6px;
+	border-top-right-radius:6px;
+}.grid tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:6px;
+	-webkit-border-bottom-left-radius:6px;
+	border-bottom-left-radius:6px;
+}.grid tr:hover td{
+	
+}
+.grid tr:nth-child(odd){ background-color:#aad4ff; }
+.grid tr:nth-child(even)    { background-color:#ffffff; }.grid td{
+	vertical-align:middle;
+	
+	
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:center;
+	padding:10px;
+	font-size:12px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+}.grid tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.grid tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.grid tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.grid tr:first-child td{
+		background:-o-linear-gradient(bottom, #005fbf 5%, #003f7f 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #005fbf), color-stop(1, #003f7f) );
+	background:-moz-linear-gradient( center top, #005fbf 5%, #003f7f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#005fbf", endColorstr="#003f7f");	background: -o-linear-gradient(top,#005fbf,003f7f);
+
+	background-color:#005fbf;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#ffffff;
+}
+.grid tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #005fbf 5%, #003f7f 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #005fbf), color-stop(1, #003f7f) );
+	background:-moz-linear-gradient( center top, #005fbf 5%, #003f7f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#005fbf", endColorstr="#003f7f");	background: -o-linear-gradient(top,#005fbf,003f7f);
+
+	background-color:#005fbf;
+}
+.grid tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.grid tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
+.center{
+	margin-left: 39%;
+}
+
+/* #Sponsor{ */
+/*  visibility: hidden; */
+/* } */
+
+/*######### MYCODE ##########*/
+
+.fila-titulo .texto{
+	margin-left: 5px;
+}
+.titulo{
+font-size: 30px;
+color: black;
+/*text-shadow: black 0.1em 0.1em 0.2em;*/
+/*background: blue;*/
+}
+.titulo span{
+	font-style: italic; /*Porcion destacada de RutSponsor*/
+}
+.subtitulo{ /*Formato de entrada*/
+	font-size: 15px;
+	color: gray;
+	font-style: italic;
+}
+.contenedor{
+	width: 95% !important;
+	margin: auto;
+}
+.containerTable{
+	margin-top: 20px;
+}
+.mensaje{
+	font-size: 11px;
+	box-shadow: 2px;
+}
+
+.textoTitulo p{
+	font-size: 14px;
+}
+
+.linea{
+	border: solid 2px;
+	border-color: #B94A48;
+	margin-top: 0px !important;
+	margin-bottom: 0px;
+}
+.cabecera{
+
+	background-color: #ECEEEF;
+	font-weight: bold; /*encabezado de tabla*/
+}
+.cabecera2{
+	border: solid 1px;
+	background-color: #ECEEEF;
+	font-weight: bold; /*encabezado de tabla*/
+}
+.cabecera3{
+	border: solid 1px;
+	background-color: #ECEEEF;
+	font-weight: bold; /*encabezado de tabla*/
+	padding: 10px;
+}
+.cabecera2 .tduser{
+	
+	text-align: center center !important; /*NOTA!: REVISAR!!*/
+	
+}
+.cabecera2 .tdpass{
+	background-color: #ECEEEF;
+}
+.tdCampouser, .tdCampopass{ /**/
+	width: 40%;
+}
+.tdCampouser input, .tdCampopass input{
+	width: 90%;
+}
+.tdTextoUser p, .tdTextoPass p{
+	vertical-align: center;
+}
+#tablaCC{
+	margin-top: 30px;
+}
+.cabecera td{
+	/*color: #B94A48;*/
+}
+.btnRecauda{
+	width: 40%;
+	/*margin-left: 33%; /*##REVISAR!!*/
+}
+.btnRecauda #confirmar, .btnRecauda #volver, .btnRecauda #rechazar{
+	width: 100%; /*Ancho de botones resumenRecaudacion*/
+}
+
+.titlesMenu{
+	margin-left: 20px;
+}
+.t1Menu .texto, .t2Menu{
+
+}
+.logoCelda{
+	width: 100%;
+}
+.contResumen{
+	width: 100%; /*NO MODIFICABLE POR SER HEADER*/
+	margin-top: 20px;
+}
+
+
+.contResumen .col1{
+	background-color: #ECEEEF; /*GRIS*/
+	border-radius: 5px;
+}
+.contResumen .col1 p{
+	font-size: 12px;
+	padding-top:10px; 
+	font-weight: bold;
+
+}
+.subcapaLogin{
+	border-color: 1px black;
+}
+
+.col2-btnIngresar{
+	margin-left: 10%;
+}
+.col2-btnIngresar .detalle{
+	width: 120px;
+}
+.tablaLogin{
+	margin-top: 30px;
+
+}
+.tablaLogin > thead > tr > th { 
+	vertical-align: middle;
+	border-bottom: 1px solid black;
+}
+#cuadraturaArchivos, #revisarArchivos, #consultarCuenta, #confirmarRecaudacion{
+	width: 50%;
+}
+.rowBtnCuadratura{
+	padding-top: 20px;
+}
+.rowBtnRecaudacion{
+	padding-bottom: 20px;
+}
+.contMenuPrincipal{
+
+	margin-top: 20px;
+	/*border: solid 1px;  SE REEMPLAZA POR CLASE PANEL.
+	border-color: #ECEEEF;*/
+	/*width: 60%; Sale por Normalizacion */
+	margin: 20px auto;
+}
+
+/*###### RESUMEN CUENTA CORRIENTE ########*/
+.rowCombobox{
+	width: 30%;
+}
+.colfechaInicio{
+	display: inline-block;
+	float: left;
+}
+
+.row-table{
+	margin-top: 20px;
+}
+.contenedorCombobox{
+	margin-top: 50px;
+	
+	
+}
+.contenedorTotales{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+/* index sponor*/
+.tablaNombreSponsor{
+	/*border: solid 1px;*/ /*REVISAR ENMARCADO NOMBRESPONDOR*/
+}
+.contSelectSponsor{
+	margin-top: 10px;
+	width: 100%; 
+	margin-top: 50px;
+	
+	/*padding: 20px 0; problemas con margen*/ 
+}
+/*backup 
+.contenedorSponsor{
+	margin-top: 10px;
+	width: 100%; 
+	margin-top: 50px;
+	
+	/*padding: 20px 0; problemas con margen*/ 
+}
+
+*/
+.TDsponsor{
+	margin-right: 5px;
+}
+/*
+#selectSponsor{
+	width: 120px;
+}*/
+/* SE COMENTA POR TRATAMIENTO MEDIANTE BOOTSTRAP: ;
+#Sponsor{
+	width: 60%;
+	margin:auto;
+	*/
+}
+.tableSponsor{
+	width: 40%;
+	margin: auto;
+}
+.subcapaSponsor{
+	width: 70%;
+	margin: auto;
+	padding: 20px 0px;
+	border: solid 1px;
+	border-color: #ECEEEF
+}
+.contenedorTable{
+	width: 100%;
+	border: solid 1px;
+	border-color: #ECEEEF;
+	/*height: 300px;*/
+}
+.datos1{
+	width: 50%;
+}
+.selectTipoMovimiento, .selectTipoPrima, .selectEstados{
+	width: 100px;
+}
+.divControls{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 93%;
+	margin: auto;
+}
+.divControls2{ /*clase para misma funcion con variaciones en pagina (05-detalleCuenta)*/
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 100%; /*antes 50%*/
+	margin: auto;
+	
+}
+.tableControls2{
+width: 50%;
+
+}
+.tableControls{
+	margin-top: 20px	width: 100%;
+}
+.tableControls td{
+	
+}
+.tableControls .radio{
+	padding: 5px;
+
+}
+.pintar{
+	padding: 5px;
+	background-color: #ECEEEF;
+}
+.form-control-red{
+	width: 100% !important;
+}
+.form-control-red:focus {
+	border-color: #FF0000;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+.form-control-red2:focus{
+	border-color: #FF0000;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+.btnLimpiarFiltro{
+	width: 100% !important;
+}
+.btnCargarTabla{
+	width: 100% !important;
+}
+
+/*CONFIRMAR RECAUDACION (no va)*/
+
+.contenedorBuscarComprobante{
+	width: 45%; 
+	margin-top: 20px;
+}
+.celdaTexto{
+	background-color: #ECEEEF;
+
+	margin-right: 5px;
+	text-align: center;
+}
+
+/*CONFIRMAR RECAUDACION 2 (no va) */
+.contTablaRecaudacion2{
+	width: 93%;
+	border: solid 1px;
+	height: 400px;
+}
+.tablaRecaudacion2{
+	width: 98%;
+	margin: 20px auto; 
+}
+.btnAprobar, .btnVolver, .btnBuscar{
+	width: 100px !important;
+}
+
+/*############# RESUMEN RECAUDACION (resumenCuenta) ###########*/
+.tableControlsRC, .RCTable{
+	width:98%;
+	
+	margin:auto;
+}
+.textNorm{
+	width: 100% !important; /*PROPIEDAD PARA QUE EL TEXTO NO SE EXPANDA MAS DE LO NORMAL*/
+}
+.tdSeparate{
+	padding: 0px 5px;
+}
+.tdSeparate2{
+	padding: 0px ;
+}
+.tdSeparate200{
+	padding: 0px 200px;
+}
+
+
+/*### DETALLE CUENTA ###*/
+
+.contDetalleCuentaC{
+	width: 95%;
+	margin:auto;
+}
+.contResumenCuenta{
+	width: 95%;
+	margin:auto;
+}
+.containerControls{
+	width: 100% !important;
+	margin: 20px 0px;
+}
+.controlsResumenArchivos{ /*CONTAINER CONTROLES RESUMENARCHIVOS*/
+	width: 100%;
+	margin-top: 20px;
+}
+.controlDetalleArvhivos{ /*CONTAINER CONTROLES DETALLEARCHIOS*/
+	width: 100% !important;
+	margin-top: 20px;
+}
+
+.contenedorTableRA{
+	border: solid 1px;
+	border-color: #ECEEEF;
+	margin-top: 30px;
+	
+}
+.contenedorTableDA{
+	border: solid 1px;
+	border-color: #ECEEEF;
+	margin-top: 30px;
+	
+}
+
+/*DETALLE ARCHIVOS*/
+
+.contDetalleArchivos{
+	width: 95%;
+	margin:auto;s
+}
+
+/*RESUMEN ARCHIVOS*/
+/*
+.selectTipoMovtoRA, .selectPolizaRA, .selectEndosoRA ,.selectTipoPrimaRA{
+	width: 100px;
+} 
+*/
+.selectTipoMovtoDA{
+	width: 100px !important;
+}
+.width110{
+	width: 110px;
+}
+.width200{
+	width: 200px;
+}
+
+.contTControlsRA{
+	width: 100%;
+}
+.tableControlsRA1{
+	/*width: 70%;*/
+}
+.tableControlsRA2{
+	/*width: 30%;*/
+}
+
+.tableBusqueda{ /*NUUUNCA! SE HACEN MARGIN EN COMPONENTES INDIVIDUALES CUANDO ESTOS PERTENECEN A UN ROW Y TIENEN OTROS 
+	ELEMENTOS HERMANOS DENTRO DE LA MISMA ROW - HACER MARGIN SOBRE EL ROW O CONTAINER DIRECTAMENTE*/
+	/*margin-top: 30px;*/
+}
+.contBusqueda{
+	margin-top: 30px;
+}
+
+
+/*contenedor campos de busqueda vista 3.2*/
+
+.contenedor100{
+	width: 100% !important;
+}
+.row100{
+	width: 100% !important;
+}
+.controlsDetalleArchivos{
+	margin-top: 50px;
+}
+
+
+
+/*###### REFUNDICION #######*/
+
+/*INDEX*/
+
+.contLogin{
+	width: 60%;
+	margin: auto;
+}
+.rowLogin{
+	width: 100%;	
+}
+/*SE SACA POR NORLAMIZACION
+
+MENU PRINCIPAL#btnCuadraturaArchivos, #btnRevisarArchivos, #btnConsultarCuenta{
+	width: 50%;
+}*/
+
+#btnCuadraturaArchivos:hover, #btnRevisarArchivos:hover, #btnConsultarCuenta:hover{
+	background-color: #286090;
+	color: #FFFFFF;
+}
+.rowMenuPrincipal{
+	padding: 20px;
+}
+
+/*CUADRATURA ARCHIVOS*/
+
+.contBtnsCuadratura{
+	/*width: 40%;*/
+}
+.contBtnsCuadratura input[type="button"]{
+	width: 100%;
+}
+.contTablaCA{
+	width: 95%;
+	margin: auto;
+}
+.btn-responsive {
+    white-space: normal !important;
+    word-wrap: break-word;
+}
+
+/*RESUMEN ARCHIVOS*/
+
+.contControlsRA{
+	width: 95%;
+	margin: auto;
+}
+.rowSponsorRA{
+	width: 60%;
+	position: relative;
+	display: block;
+}
+.rowtFiltrosRA{
+	width: 100%;
+	display: block;
+}
+.btnCargarTablaRA{
+	/*
+	position: relative;
+	vertical-align: bottom !important;
+	*/
+}
+.contControlsRA{
+	margin-top: 30px;
+	width: 92%;
+}
+.contTableRA{
+	margin-bottom: 30px;
+}
+.rowTotalesRA, .rowTotalesDA{
+	/*width: 60%;*/
+	/*margin-top: 15px;*/
+}
+
+/*REVISAR ARCHIVOS RECEPCIONADOS*/
+
+.contTableRevA{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+/*REVISAR ARCHIVOS RECEPECIONADOS RSM*/
+.contCamposRsmA, .contTableRsmA{
+	margin-top: 30px;
+}
+.contTotalesRsmA, .contTotalesDC .contTotalesRA, .contTotalesDA {
+	/*margin-top: 20px; Se saca por normalizacion */
+	margin-bottom: 30px;
+}
+
+/*DETALLE ARCHIVOS*/
+
+.contCamposDA{
+	margin-top: 30px;
+}
+.rowCamposDA2{
+	/*margin-top: 20px;*/
+}
+.contTableDA{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.contTableRsmA{
+	margin-bottom: 30px;
+}
+
+.contControlsRCC{
+	margin-top: 30px;
+}
+.contControlsDC{
+	margin-top: 30px;
+}
+.rowCamposDC{
+
+} 
+
+.rowFiltrosDC, .panel-camposCompletar{
+	margin-top: 20px;
+}
+.rowCamposDC{
+	/* Interrumpe el diseño responsive de adaptacion a pantalla de los campos
+	position: relative;
+	display: inline-block;
+	*/
+}
+.panel-camposCompletar{
+
+}
+
+.contTableDC{
+	margin-top: 15px;
+}
+
+/*RESUMEN CUENTA CORRIENTE (3.1)*/
+
+.rowselectTipoMovto{
+
+}
+#col-hideControls{
+	visibility: hidden;
+	opacity: 0; /*fix for safari*/
+}
+
+
+.contTableRCC{
+	margin-top: 30px;
+}
+
+.contTotalesRCC{
+	margin-top: 15px;
+	margin-bottom: 30px;
+
+}
+.contLogin2{
+	margin-top: 30px;
+}
+.contLogin2 .panel{
+	width: 70%;
+	margin:auto;
+}
+.rowBtnLogin{
+	margin-top: 15px;
+}
+.contSelectSponsor{
+	/*text-align: center;*/
+}

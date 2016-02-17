@@ -1,0 +1,12 @@
+body{
+    background: -moz-linear-gradient(90deg, white 10%, lightblue 90%);
+    background: -webkit-linear-gradient(90deg, white 10%, lightblue 90%);
+    background: -webkit-gradient(linear, 0 100%, 0 0, color-stop(0.1, white), color-stop(0.9, lightblue));
+    background: -o-linear-gradient(90deg, white 10%, lightblue 90%);
+    background: linear-gradient(90deg, white 10%, lightbluee 90%);
+}
+
+.titulo{
+	font-style: italic;
+}
+
