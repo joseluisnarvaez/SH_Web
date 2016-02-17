@@ -6,6 +6,10 @@
 		<script src="../../js/jquery-1.9.1.js"></script>
         <link rel="stylesheet" href="../../css/bootstrap.min.css">
         <link rel="stylesheet" href="../../css/index.css">
+        
+        <script src="../../js/datatables.min.js"></script>
+	    <link rel="stylesheet" href="../../css/datatables.min.css">
+	
         <script src="../../js/Confirmacion.js"></script>
 
     </head>
@@ -66,7 +70,7 @@
 	</thead>
 	
 	<tbody>
-	
+	<tr></tr>
 	</tbody>
 	
 	</table>

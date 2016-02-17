@@ -57,6 +57,7 @@ $(function() {
 		});
 
 		$("#tablaCC").find('tbody').html(list);	
+		$('#tablaCC').DataTable();
 	}
 	
 	

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/index.css">
     <script src="../../js/Cuadratura.js"></script>
+    <script src="../../js/datatables.min.js"></script>
+	<link rel="stylesheet" href="../../css/datatables.min.css">
 </head>
 <body>
 	<!--TITULO DE PAGINA Y LOGO-->

@@ -40,7 +40,7 @@ public class login {
 		HttpSession session = req.getSession(true);
 		String rut="";
 		rut= new DaoUsuarios().getUsuario(user, pass);
-		rut="1";
+	
 		Usuarios usuario= new Usuarios();
 		if(rut!=null){
 			usuario.setUser(user);

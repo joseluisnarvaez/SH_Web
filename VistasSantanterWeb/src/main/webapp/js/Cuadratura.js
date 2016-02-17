@@ -1,5 +1,39 @@
 $(function() {
 
+	var url =  "../movimientos/find";
+	
+	$.getJSON(url).done(function(dat) {
+		window.dattabla = dat;
+		var list= "<option value='0'></option>";
+		$.each(dat , function(j,i){
+			 list+= "<option value='"+j+"'>"+i+"</option>";
+			
+		} );
+			
+		 $("#selectMovimientos").html(list);  
+
+	});
+	
+
+	var url =  "../Sponsor/getrut";
+	
+	$.getJSON(url).done(function(dat) {
+		window.dattabla = dat;
+
+		$("#sponsortext").val(dat);
+
+	});
+	
+	var url =  "../Bitacora/GetInfo";
+	
+	$.getJSON(url).done(function(dat) {
+		window.dattabla = dat;
+
+		armartabla();
+
+	});
+	$('#tablaCC').DataTable();
+	
 	/*boton volver*/
 	$('#volver').on('click',function (){
 		var url =  "../menu/";
@@ -77,6 +111,7 @@ $(function() {
 		});
 
 		$("#tablaCC").find('tbody').html(list);	
+		$('#tablaCC').DataTable();
 		
 	}
 	
