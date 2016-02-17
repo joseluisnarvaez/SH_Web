@@ -10,12 +10,8 @@
     <link rel="stylesheet" href="../../css/index.css">
     <!--PLUGIN DATATABLES-->
     <script src="../../js/datatables.min.js"></script>
-<<<<<<< HEAD
 	<script src="../../js/revisararchivos.js"> </script>
-=======
-	 <link rel="stylesheet" href="../../css/datatables.min.css">
-<!-- 	<script src="../../js/habilitar.js"></script> -->
->>>>>>> 2e7935b7348ef9f593562050aa9263e7a7957aba
+	<link rel="stylesheet" href="../../css/datatables.min.css">
 	<script src="../../js/resumencc.js"> </script>
 	<!--FIN DATATABLES-->
 </head>
@@ -162,12 +158,9 @@
 							</tr>
 						</thead>
 						<tbody>
-<<<<<<< HEAD
+
 							<!-- Se carga el resto de la tabla con datos desde el jqeury resumencc -->
-							
-=======
-						
->>>>>>> 2e7935b7348ef9f593562050aa9263e7a7957aba
+
 						</tbody>
 					</table>
 				</div>

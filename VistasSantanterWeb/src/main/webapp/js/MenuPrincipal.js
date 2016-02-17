@@ -9,7 +9,7 @@ $(function() {
 	});
 	
 	$('#btnRevisarArchivos').on('click',function (){
-		location.href="ResumenArch";
+		location.href="RevisarArch";
 	});
 	
 });

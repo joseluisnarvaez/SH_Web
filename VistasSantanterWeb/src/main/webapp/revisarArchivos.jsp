@@ -11,17 +11,17 @@
     <link rel="stylesheet" href="../../css/index.css">
     
     <!--PLUGIN DATATABLES-->
-<<<<<<< HEAD
+
     <link rel="../../datatables.min.css"/>
 	<script src="../../js/datatables.min.js"></script>
 	<script src="../../js/revisararchivos.js"> </script>
 
-=======
+
     
      <script src="../../js/datatables.min.js"></script>
 	 <link rel="stylesheet" href="../../css/datatables.min.css">
 	 
->>>>>>> 2e7935b7348ef9f593562050aa9263e7a7957aba
+
 	
 	<!--FIN DATATABLES-->
 	
@@ -49,7 +49,7 @@
 		<div class="row rowTableRevA">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<div class="table-responsive">
-					<table class="table table-bordered table-hover" id="RevATable"> <!--efecto hover (probando)-->
+					<table class="table table-bordered table-hover" id="RevTable"> <!--efecto hover (probando)-->
 						<thead class="thead-default">
 							<tr class="cabecera">
 								<th>Confirmar</th>
@@ -63,10 +63,9 @@
 							</tr>
 						</thead>
 						<tbody>
-<<<<<<< HEAD
-=======
+
 							
->>>>>>> 2e7935b7348ef9f593562050aa9263e7a7957aba
+
 							<!--NOTA: Quizas sea buena idea usar la opcion de select de una tabla dinamica para seleccionar uno de los registros arrojados por sistema en reemplazo del radio button-->
 						</tbody>
 					</table>

@@ -8,4 +8,9 @@ $(function() {
 
 	});
 	$('#RsmATable').DataTable();
+	
+	$('#btnVolver').on('click', function(){
+		url="../RevisarArch"
+		window.location.href=url;
+	})
 });

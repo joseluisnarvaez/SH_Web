@@ -1,6 +1,6 @@
 $(function() {
 
-
+	/*confirmar que se usa el campo sponsor para esta vista (revisarArchivos)*/
 	var url =  "../Sponsor/getrut";
 	
 	$.getJSON(url).done(function(dat) {
@@ -9,7 +9,7 @@ $(function() {
 		$("#sponsortext").val(dat);
 
 	});
-	
+	/*obtiene datos guardados en bitacora y los carga mediante metodo armartabla()*/
 	var url =  "../Bitacora/GetAll";
 	
 	$.getJSON(url).done(function(dat) {
@@ -18,7 +18,8 @@ $(function() {
 		armartabla();
 
 	});
-	$('#RevATable').DataTable();
+	
+	$('#RevTable').DataTable();
 	
 	
 	
@@ -43,7 +44,7 @@ $(function() {
 		$("#RevATable").find('tbody').html(list);	
 	}
 	
-	
+	/*redireccion de boton revisar validado*/
 	$("#btnRevisarDA").click(function () {	 
 		var id=$('input:radio[name=check]:checked').val()
 		if(id>0){
@@ -55,6 +56,12 @@ $(function() {
 		}
 		
 		});
+	/*redireccionamiento sin validacion*/
+	
+	$('#ver').on('click', function(){
+		url = "RevisarArch/detalle";
+		window.location.href= url;
+	});
 	
 	$('#volver').on('click',function (){
 		var url =  "../menu/";

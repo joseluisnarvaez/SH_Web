@@ -54,7 +54,7 @@ public class MenuRest {
 		Usuarios use = (Usuarios) session.getAttribute("user");
 		
 		if(use!=null){
-			return Response.ok(new Viewable("/Cuadratura")).build();
+			return Response.ok(new Viewable("/cuadraturaArchivos")).build();
 		}
 		else{
 			 java.net.URI location = null;
@@ -124,7 +124,7 @@ public class MenuRest {
 		
 		
 	}
-	@Path("/ResumenArch")
+	@Path("/RevisarArch")
 	@GET
 	@Produces({ MediaType.TEXT_HTML })
 	public Response getResumenArch(@Context HttpServletRequest req) {
@@ -133,7 +133,7 @@ public class MenuRest {
 		Usuarios use = (Usuarios) session.getAttribute("user");
 		
 		if(use!=null){
-			return Response.ok(new Viewable("/resumenArchivo")).build();
+			return Response.ok(new Viewable("/revisarArchivos")).build();
 		}
 		else{
 			 java.net.URI location = null;
@@ -150,7 +150,7 @@ public class MenuRest {
 		
 		
 	}
-	@Path("/ResumenArch/detalle")
+	@Path("/RevisarArch/detalle")
 	@GET
 	@Produces({ MediaType.TEXT_HTML })
 	public Response getDetalleArch(@Context HttpServletRequest req) {
@@ -159,7 +159,7 @@ public class MenuRest {
 		Usuarios use = (Usuarios) session.getAttribute("user");
 		
 		if(use!=null){
-			return Response.ok(new Viewable("/resumenArchivo3")).build();
+			return Response.ok(new Viewable("/detalleArchivo")).build();
 		}
 		else{
 			 java.net.URI location = null;
