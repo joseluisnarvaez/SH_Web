@@ -1,6 +1,6 @@
 $(function() {
 	$('#RCTable').DataTable();
-});
+
 
 
 /*carga campo rut*/
@@ -14,6 +14,38 @@ var url =  "../Sponsor/getrut";
 
 	});
 
+var url =  "../CCorrientes/getcuentas";
+	
+	$.getJSON(url).done(function(dat) {
+		window.dattabla = dat;
+
+		armartabla();
+
+	});
+});	
+	
+	function armartabla() {	
+		var list="";
+		$.each(dattabla, function(index, value) {
+			list += "<tr>";
+			list += "<td>" + value.CCCExt_Nro_Solicitud + "</td>";
+			list += "<td>" + value.CCCExt_Nro_Solicitud + "</td>";			
+			list += "<td>" + value.CCCExt_Periodo + "</td>";
+			list += "<td>" +value.CCCExt_PolizaCia+"/"+value.CCCExt_ItemCia+"/"+ value.CCCExt_EndosoCia + "</td>";
+			list += "<td>" + value.CCCExt_Prima_Debe + "</td>";
+			list += "<td>" + value.CCCExt_Prima_Haber + "</td>";
+			list += "<td>" + value.CCCExt_MonedaOrigen + "</td>";			
+			list += "<td>" + value.CCCExt_Prima_Debe_MP + "</td>";
+			list += "</tr>";
+		});
+
+		$("#RCTable").find('tbody').html(list);
+		$('#RCTable').DataTable();
+	}
+	
+	
+	
+/*#######################################*/	
 /*funcion animacion selecto tipo movimiento*/
 function habilitar(value)
 {

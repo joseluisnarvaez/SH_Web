@@ -133,7 +133,7 @@ public class MenuRest {
 		Usuarios use = (Usuarios) session.getAttribute("user");
 		
 		if(use!=null){
-			return Response.ok(new Viewable("/revisarArchivos")).build();
+			return Response.ok(new Viewable("/resumenArchivo")).build();
 		}
 		else{
 			 java.net.URI location = null;

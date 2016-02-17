@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/index.css">
     <!--PLUGIN DATATABLES-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/t/bs/jqc-1.12.0,dt-1.10.11,cr-1.3.1,r-2.0.2,rr-1.1.1,sc-1.4.1,se-1.1.2/datatables.min.css"/>
-	<script type="text/javascript" src="https://cdn.datatables.net/t/bs/jqc-1.12.0,dt-1.10.11,cr-1.3.1,r-2.0.2,rr-1.1.1,sc-1.4.1,se-1.1.2/datatables.min.js"></script>
-	<script src="../../js/habilitar.js"></script>
+    <script src="../../js/datatables.min.js"></script>
+	<script src="../../js/revisararchivos.js"> </script>
 	<script src="../../js/resumencc.js"> </script>
 	<!--FIN DATATABLES-->
 </head>
@@ -38,7 +37,7 @@
 				<div class="panel panel-default">
 					<div class="panel-body">
 						<label for="campoSponsorRCC">Sponsor:</label>
-						<input type="text" class="campoSponsorRCC form-control form-control-red2" name="campoSponsorRCC" id="campoSponsorRCC" readonly="readonly">
+						<input type="text" class="campoSponsorRCC form-control form-control-red2" name="campoSponsorRCC" id="sponsortext" readonly="readonly">
 					</div>
 				</div>
 			</div>
@@ -135,7 +134,7 @@
 				</div>
 			</div>
 		</div>
-	
+	</div>
 	<!--CONTENEDOR DE TABLA RESUMEN CUENTA CORRIENTE-->
 	<div class="container contTableRCC">
 		<div class="row">
@@ -158,123 +157,8 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-							</tr>
-							<tr>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-							</tr>
-							<tr>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-							</tr>
-							<tr>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-							</tr>
-							<tr>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-							</tr>
-							<tr>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-							</tr>
-							<tr>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-							</tr>
-							<tr>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-							</tr>
-							<tr>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-								<td>Datos Varios - </td>
-							</tr>
+							<!-- Se carga el resto de la tabla con datos desde el jqeury resumencc -->
+							
 						</tbody>
 					</table>
 				</div>
