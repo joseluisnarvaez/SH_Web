@@ -44,10 +44,11 @@ $(function() {
 	}
 	
 	
-	$("#Ver").click(function () {	 
+	$("#btnRevisarDA").click(function () {	 
 		var id=$('input:radio[name=check]:checked').val()
 		if(id>0){
-			alert(id);	
+			var url =  "../menu/ResumenArch/detalle?id="+id;
+			 window.location = url;
 		}
 		else{
 			alert('Debe seleccionar un archivo');

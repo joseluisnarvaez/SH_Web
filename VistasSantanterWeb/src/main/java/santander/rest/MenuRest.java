@@ -159,7 +159,7 @@ public class MenuRest {
 		Usuarios use = (Usuarios) session.getAttribute("user");
 		
 		if(use!=null){
-			return Response.ok(new Viewable("/ResumenArchivo")).build();
+			return Response.ok(new Viewable("/resumenArchivo3")).build();
 		}
 		else{
 			 java.net.URI location = null;
