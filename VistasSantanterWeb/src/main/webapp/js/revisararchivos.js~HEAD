@@ -1,6 +1,10 @@
+
+
 $(function() {
 
-
+$('#RevATable').DataTable();
+	
+/*no se carga sponsor*/
 	var url =  "../Sponsor/getrut";
 	
 	$.getJSON(url).done(function(dat) {
@@ -44,7 +48,7 @@ $(function() {
 	}
 	
 	
-	$("#Ver").click(function () {	 
+	$("#ver").click(function () {	 
 		var id=$('input:radio[name=check]:checked').val()
 		if(id>0){
 			alert(id);	

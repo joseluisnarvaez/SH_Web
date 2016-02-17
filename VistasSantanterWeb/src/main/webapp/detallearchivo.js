@@ -7,5 +7,5 @@ $(function() {
 		$("#sponsortext").val(dat);
 
 	});
-	$('#RsmATable').DataTable();
+	$('#DATable').DataTable();
 });

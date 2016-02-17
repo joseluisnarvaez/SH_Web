@@ -10,7 +10,12 @@
     <link rel="stylesheet" href="../../css/index.css">
     <!--PLUGIN DATATABLES-->
     <script src="../../js/datatables.min.js"></script>
+<<<<<<< HEAD
 	<script src="../../js/revisararchivos.js"> </script>
+=======
+	 <link rel="stylesheet" href="../../css/datatables.min.css">
+<!-- 	<script src="../../js/habilitar.js"></script> -->
+>>>>>>> 2e7935b7348ef9f593562050aa9263e7a7957aba
 	<script src="../../js/resumencc.js"> </script>
 	<!--FIN DATATABLES-->
 </head>
@@ -23,7 +28,7 @@
 					<p>Resumen Cuenta Cte.</p>
 				</div>
 				<div class="col-lg-2 col-lg-offset-7 col-md-2 col-md-offset-6 col-sm-4 col-sm-offset-4 col-xs-6 ">
-					<img src="../img/logo.png" class="logoCelda"alt="">
+					<img src="../../img/logo.png" class="logoCelda"alt="">
 				</div>
 			</div>
 		</div>
@@ -157,8 +162,12 @@
 							</tr>
 						</thead>
 						<tbody>
+<<<<<<< HEAD
 							<!-- Se carga el resto de la tabla con datos desde el jqeury resumencc -->
 							
+=======
+						
+>>>>>>> 2e7935b7348ef9f593562050aa9263e7a7957aba
 						</tbody>
 					</table>
 				</div>

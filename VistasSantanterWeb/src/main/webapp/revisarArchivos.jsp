@@ -9,13 +9,23 @@
 	<script src="../../js/jquery-1.9.1.js"></script>
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/index.css">
+    
     <!--PLUGIN DATATABLES-->
+<<<<<<< HEAD
     <link rel="../../datatables.min.css"/>
 	<script src="../../js/datatables.min.js"></script>
 	<script src="../../js/revisararchivos.js"> </script>
 
+=======
+    
+     <script src="../../js/datatables.min.js"></script>
+	 <link rel="stylesheet" href="../../css/datatables.min.css">
+	 
+>>>>>>> 2e7935b7348ef9f593562050aa9263e7a7957aba
 	
 	<!--FIN DATATABLES-->
+	
+	<script src="../../js/revisararchivos.js"> </script>
 </head>
 <body>
 	<!--TITULO DE PAGINA Y LOGO-->
@@ -26,7 +36,7 @@
 					<p>Revisar Archivos Recepcionados</p>
 				</div>
 				<div class="col-lg-2 col-lg-offset-7 col-md-2 col-md-offset-6 col-sm-4 col-sm-offset-4 col-xs-6 ">
-					<img src="../img/logo.png" class="logoCelda"alt="">
+					<img src="../../img/logo.png" class="logoCelda"alt="">
 				</div>
 			</div>
 		</div>
@@ -53,6 +63,10 @@
 							</tr>
 						</thead>
 						<tbody>
+<<<<<<< HEAD
+=======
+							
+>>>>>>> 2e7935b7348ef9f593562050aa9263e7a7957aba
 							<!--NOTA: Quizas sea buena idea usar la opcion de select de una tabla dinamica para seleccionar uno de los registros arrojados por sistema en reemplazo del radio button-->
 						</tbody>
 					</table>
