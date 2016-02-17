@@ -212,13 +212,13 @@ public class DaoBitacora {
 	}
 	
 	public List<Bitacora> getAll(){
-		String sql ="SELECT CCCExt_ID,"
+		String sql ="SELECT CCCExt_ID_Bitacora,"
 						  + "convert(char(10),getdate(),103) as CCCExt_Fecha_Carga,(convert(char(8),getdate(),118)) As hora,"
 						  + "CCCExt_CantReg_Infor,"
 						  + "CCCExt_Nom_Arch_Orig,"
 						  + "CCCExt_MontoPagado_Info "
 					+ "FROM dbo.CCteExt_Bitacora "
-					+ "WHERE CCCExt_Estado_Proc !=100 ";
+					+ "WHERE CCCExt_Estado_Proc =4 ";
 					
 
 		
@@ -242,7 +242,7 @@ public class DaoBitacora {
 				bi.setCCCExt_Fecha_Carga(rs.getString("CCCExt_Fecha_Carga"));
 				bi.setHora_Carga(rs.getString("hora"));
 				bi.setCCCExt_CantReg_Infor(rs.getInt("CCCExt_CantReg_Infor"));
-				bi.setCCCExt_ID(rs.getInt("CCCExt_ID"));
+				bi.setCCCExt_ID(rs.getInt("CCCExt_ID_Bitacora"));
 				bi.setCCCExt_MontoPagado_Info(rs.getDouble("CCCExt_MontoPagado_Info"));
 				bi.setCCCExt_Nom_Arch_Orig(rs.getString("CCCExt_Nom_Arch_Orig"));
 				Cuentas.add(bi);
@@ -286,7 +286,7 @@ public class DaoBitacora {
 	
 	
 	public List<Bitacora> getByID(int id){
-		String sql ="SELECT CCCExt_ID,"
+		String sql ="SELECT CCCExt_ID_Bitacora,"
 						  + "convert(char(10),getdate(),103) as CCCExt_Fecha_Carga,(convert(char(8),getdate(),118)) As hora,"
 						  + "CCCExt_CantReg_Infor,"
 						  + "CCCExt_Nom_Arch_Orig,"
@@ -358,5 +358,78 @@ public class DaoBitacora {
 		
 	}
 	
+	
+	public List<Bitacora> getArchivo(int id){
+		String sql ="SELECT CCCExt_ID_Bitacora,"
+						  + "convert(char(10),getdate(),103) as CCCExt_Fecha_Carga,(convert(char(8),getdate(),118)) As hora,"
+						  + "CCCExt_CantReg_Infor,"
+						  + "CCCExt_Nom_Arch_Orig,"
+						  + "CCCExt_MontoPagado_Info "
+					+ "FROM dbo.CCteExt_Bitacora "
+					+ "WHERE CCCExt_Estado_Proc !=100 ";
+					
+
+		
+		Connection conn = null;
+		ResultSet rs = null;
+		PreparedStatement pre = null;
+		List<Bitacora> Cuentas = new ArrayList<Bitacora>();
+		try {
+			conn = new ConexionSybases().openConnection();
+			
+			pre = conn.prepareStatement(sql);
+			
+
+			
+			
+			rs = pre.executeQuery();
+			
+			while (rs.next()) {
+				Bitacora bi=new Bitacora();
+
+				bi.setCCCExt_Fecha_Carga(rs.getString("CCCExt_Fecha_Carga"));
+				bi.setHora_Carga(rs.getString("hora"));
+				bi.setCCCExt_CantReg_Infor(rs.getInt("CCCExt_CantReg_Infor"));
+				bi.setCCCExt_ID(rs.getInt("CCCExt_ID"));
+				bi.setCCCExt_MontoPagado_Info(rs.getDouble("CCCExt_MontoPagado_Info"));
+				bi.setCCCExt_Nom_Arch_Orig(rs.getString("CCCExt_Nom_Arch_Orig"));
+				Cuentas.add(bi);
+				
+
+			}
+
+		} catch (Exception e) {
+			 logger.error("Error, causa:" , e);
+		} finally {
+			if (rs != null) {
+				try {
+					rs.close();
+				} catch (SQLException e) {
+					 logger.error("Error, causa:" , e);
+				}
+			}
+			if (pre != null) {
+				try {
+					pre.close();
+				} catch (SQLException e) {
+					 logger.error("Error, causa:" ,
+					 e);
+				}
+			}
+			if (conn != null) {
+				try {
+					conn.close();
+				} catch (SQLException e) {
+					 logger.error("Error, causa:" ,
+					 e);
+				}
+			}
+
+		}
+
+		return Cuentas;
+		
+		
+	}
 	
 }

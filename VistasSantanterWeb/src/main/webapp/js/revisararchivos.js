@@ -18,7 +18,7 @@ $(function() {
 		armartabla();
 
 	});
-
+	$('#RevATable').DataTable();
 	
 	
 	
@@ -40,7 +40,7 @@ $(function() {
 			list += "</tr>";
 		});
 
-		$("#tablaCC").find('tbody').html(list);	
+		$("#RevATable").find('tbody').html(list);	
 	}
 	
 	

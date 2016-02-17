@@ -10,7 +10,7 @@
         <script src="../../js/datatables.min.js"></script>
 	    <link rel="stylesheet" href="../../css/datatables.min.css">
 	
-        <script src="../../js/Confirmacion.js"></script>
+        <script src="../../../js/Confirmacion.js"></script>
 
     </head>
 	
@@ -22,7 +22,7 @@
 					<p>Resumen recaudaci&oacuten que ser&aacute cargada</p>
 				</div>
 				<div class="col-lg-2 col-lg-offset-7 col-md-2 col-md-offset-6 col-sm-4 col-sm-offset-4 col-xs-6 ">
-					<img src="../../img/logo.png" class="logoCelda"alt="">
+					<img src="../../../img/logo.png" class="logoCelda"alt="">
 				</div>
 			</div>
 
