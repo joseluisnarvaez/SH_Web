@@ -33,7 +33,7 @@
 		</div>
 		<hr class="linea">
 	</header>
-
+	
 	<!-- SET DE CAMPOS REVISAR ARCHIVOS RECEPCIONADOS (RSM)-->
 <!-- 	<div class="container contCamposRsmA"> -->
 <!-- 		<!--CAMPO SPONSOR-->

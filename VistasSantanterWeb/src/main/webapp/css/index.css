@@ -814,3 +814,11 @@ MENU PRINCIPAL#btnCuadraturaArchivos, #btnRevisarArchivos, #btnConsultarCuenta{
 .contSelectSponsor{
 	/*text-align: center;*/
 }
+.contenedorSponsorCuadratura{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.contenedorSponsorRevArch{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}

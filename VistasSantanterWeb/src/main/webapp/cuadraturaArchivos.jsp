@@ -28,7 +28,26 @@
 		</div>
 		<hr class="linea">
 	</header>
-	
+	<!-- CONTENEDOR SPONSOR Y TIPO MOVIMIENTO -->
+	<div class="container contControlsCA">
+		<!--FILA CON EL CAMPO NOMBRE DE SPONSOR (READONLY)-->
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="row rowCamposCA">
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+						<label for="campoSponsorCA">Sponsor:</label>
+						<input type="text" name="campoSponsorDC" id="campoSponsorCA" class="campoSponsorCA form-control form-control-red2" readonly="readonly">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+						<label for="selectTipoMovtoCA">Tipo Movimiento</label>
+						<select name="selectTipoMovtoCA" id="selectTipoMovtoCA" class="selectTipoMovtoCA form-control form-control-red2" >
+							
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
 	<!--TABLA CUADRATURA ARCHIVOS-->
 	<div class="container"> <!--contenedor tabla cuadratura archivos-->
 		<div class="row">

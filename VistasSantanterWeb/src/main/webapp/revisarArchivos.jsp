@@ -15,9 +15,7 @@
     <link rel="../../datatables.min.css"/>
 	<script src="../../js/datatables.min.js"></script>
 	<script src="../../js/revisararchivos.js"> </script>
-
-
-    
+	
      <script src="../../js/datatables.min.js"></script>
 	 <link rel="stylesheet" href="../../css/datatables.min.css">
 	 
@@ -42,6 +40,27 @@
 		</div>
 		<hr class="linea">
 	</header>
+	
+	<!-- CONTENEDOR SPONSOR Y TIPO MOVIMIENTO -->
+	<div class="container contControlsRA">
+		<!--FILA CON EL CAMPO NOMBRE DE SPONSOR (READONLY)-->
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="row rowCamposRA">
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+						<label for="campoSponsorRA">Sponsor:</label>
+						<input type="text" name="campoSponsorRA" id="campoSponsorRA" class="campoSponsorRA form-control form-control-red2" readonly="readonly">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+						<label for="selectTipoMovtoRA">Tipo Movimiento</label>
+						<select name="selectTipoMovtoRA" id="selectTipoMovtoRA" class="selectTipoMovtoRA form-control form-control-red2" >
+							
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
 	
 	<!--TABLA REVISAR ARCHIVOS-->
 	<div class="container contTableRevA">
