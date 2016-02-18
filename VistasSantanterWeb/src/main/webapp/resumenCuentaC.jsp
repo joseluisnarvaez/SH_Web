@@ -127,10 +127,10 @@
 				</div>
 
 				<!--ROW BOTON BUSCAR-->
-				<div class="row rowBtnBuscarDC">
+				<div class="row rowBtnBuscarCC">
 					<div class="col-lg-2 col-lg-offset-10 col-md-2 col-md-offset-10 col-sm-3 col-sm-offset-9 col-xs-4 col-xs-offset-8 ">
-						<label for="btnBuscarDC"></label>
-						<input type="button" class="btn btn-primary form-control form-control-red2" id="btnBuscarDC" name="btnBuscarDC" value="Buscar">
+						<label for="btnBuscarCC"></label>
+						<input type="button" class="btn btn-primary form-control form-control-red2" id="btnBuscarCC" name="btnBuscarCC" value="Buscar">
 					</div>
 				</div>
 			</div>

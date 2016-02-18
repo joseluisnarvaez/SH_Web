@@ -22,6 +22,11 @@ var url =  "../CCorrientes/getcuentas";
 		armartabla();
 
 	});
+	
+	$('#btnBuscarCC').on('click', function(){
+		url = "ResumenCC/detalle"
+		window.location.href = url;
+	});
 });	
 	
 	function armartabla() {	

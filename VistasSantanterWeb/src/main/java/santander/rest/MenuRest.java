@@ -46,7 +46,7 @@ public class MenuRest {
 	@Path("/Cuadratura")
 	@GET
 	@Produces({ MediaType.TEXT_HTML })
-	public Response get(@Context HttpServletRequest req) {
+	public Response getCuadratura(@Context HttpServletRequest req) {
 		
 	
 		
@@ -124,6 +124,33 @@ public class MenuRest {
 		
 		
 	}
+	@Path("/ResumenCC/detalle")
+	@GET
+	@Produces({ MediaType.TEXT_HTML })
+	public Response getDetalleCC(@Context HttpServletRequest req) {
+
+		HttpSession session = req.getSession(true);
+		Usuarios use = (Usuarios) session.getAttribute("user");
+		
+		if(use!=null){
+			return Response.ok(new Viewable("/resumenCuentaCDetalle")).build();	
+		}
+		else{
+			 java.net.URI location = null;
+			try {
+				location = new java.net.URI("../web/?cod=1");
+			} catch (URISyntaxException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			    return Response.temporaryRedirect(location).build();
+		}
+
+		
+		
+		
+	}
+	
 	@Path("/RevisarArch")
 	@GET
 	@Produces({ MediaType.TEXT_HTML })

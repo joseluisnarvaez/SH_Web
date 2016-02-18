@@ -12,7 +12,7 @@
     <!--PLUGIN DATATABLES-->
       
      <script src="../../../js/datatables.min.js"></script>
-	 <link rel="stylesheet" href="../../css/datatables.min.css">
+	 <link rel="stylesheet" href="../../../css/datatables.min.css">
 	<script src="../../../js/detallearchivo.js"> </script>
 	<!-- <script src="../../js/resumenarchivos.js"></script> -->
 	
